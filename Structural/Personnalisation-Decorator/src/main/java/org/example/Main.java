@@ -6,6 +6,9 @@ public class Main {
     public static void main(String[] args) {
         Text simpleText = new SimpleText("Java - Oracle, 02/12/2024!");
 
+        String RESET = "\u001B[0m";
+        String RED = "\u001B[31m";
+
         Text upperCaseText = new UpperCaseDecorator(simpleText);
         Text lowerCaseText = new LowerCaseDecorator(simpleText);
         Text prefixedText = new PrefixDecorator(upperCaseText, "M2i - ");

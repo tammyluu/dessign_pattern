@@ -2,6 +2,8 @@ package org.example;
 
 public class PrefixDecorator extends TextDecorator{
     private  String prefix;
+    String RESET = "\u001B[0m";
+    String RED = "\u001B[31m";
     public PrefixDecorator(Text text) {
         super(text);
     }
@@ -12,6 +14,6 @@ public class PrefixDecorator extends TextDecorator{
 
     @Override
     public String transform() {
-        return prefix + text.transform();
+        return  RED+ prefix +  RESET +  text.transform() ;
     }
 }
