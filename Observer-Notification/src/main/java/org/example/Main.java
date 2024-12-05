@@ -11,7 +11,6 @@ public class Main {
         eventManager.addObserver(fileObserver);
 
         eventManager.addObserver(new ConsoleObserver());
-        eventManager.addObserver(new FileObserver("notifications.log"));
 
 
         String newPhoneEvent = "Le nouveau téléphone Tesla PI est disponible en janvier 2005!";
