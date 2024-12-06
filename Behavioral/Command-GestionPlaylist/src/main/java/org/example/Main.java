@@ -5,9 +5,9 @@ public class Main {
        PlayList playlist = new PlayList();
        PlayListControl manager = new PlayListControl();
 
-        Song song1 = new Song("Bohemian Rhapsody", "Queen");
-        Song song2 = new Song("Imagine", "John Lennon");
-        Song song3 = new Song("Hotel California", "Eagles");
+        Song song1 = new Song("Sunshine", "AAA");
+        Song song2 = new Song("Hoponopono", "BBB");
+        Song song3 = new Song("Mamakio", "CCC");
 
 
         Command addSong1 = new AddSongCommand(playlist, song1);
@@ -21,7 +21,7 @@ public class Main {
         playlist.showPlaylist();
 
 
-        Command removeSong2 = new RemoveSongCommand( song2,playlist);
+        Command removeSong2 = new RemoveSongCommand(song2, playlist);
         manager.executeCommand(removeSong2);
 
         playlist.showPlaylist();
