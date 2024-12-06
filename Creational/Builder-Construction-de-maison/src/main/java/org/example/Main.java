@@ -13,8 +13,8 @@ public class Main {
 
         HouseBuilder classicBuilder = new ClassicHouseBuilder();
         Director traditionalDirector = new Director(classicBuilder);
-        House traditionalHouse = traditionalDirector.constructHouse();
-        System.out.println("Traditional House: " + traditionalHouse);
+        House classicHouse = traditionalDirector.constructHouse();
+        System.out.println("Traditional House: " + classicHouse);
     }
 
 
